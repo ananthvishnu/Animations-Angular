@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
 import { GSAPComponent } from './components/gsap/gsap.component';
+import { AnimeComponent } from './components/anime/anime.component';
 
 // Export this function
 export function playerFactory(): any {  
@@ -22,7 +23,8 @@ export function playerFactory(): any {
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    GSAPComponent
+    GSAPComponent,
+    AnimeComponent,
   ],
   imports: [
     BrowserModule,
