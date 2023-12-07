@@ -1,34 +1,120 @@
-<div class="lottie-animation mt-10">  
-    This is where the animation will go.
-  </div>
-  
-  <div class="container-sm" style="text-align: center">  
-    <div class="splash-text">
-      <h1>
-        Step 1
-      </h1>
 
-      <div class="lottie-animation mt-10" style="height: 100px; width: 100px;">
-        <ng-lottie
-          [options]="options" 
-          (animationCreated)="onAnimate($event)">
-        </ng-lottie>
-      </div>
-  
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Impedit eligendi obcaecati quisquam molestias animi dolores 
-      vitae veniam ut provident repudiandae doloremque quae quo 
-      vel, magnam labore eveniet natus fugiat. Aspernatur.  
+
+
+
+<div class="lightbox-gallery">
+    
+  <div class="container">
+    <div class="intro">
+      <h2 class="text-center">Lottie Animations</h2>
+      <p class="text-center">
+      Hover the icons !
+      </p>
     </div>
-  
-    <div class="button-div mt-3 mb-10">    
-      <a class="btn btn-success light" style="margin: 1rem;">      
-        Previous    
-      </a>
-  
-      <a class="btn btn-primary" style="margin: 1rem;">      
-        Next    
-      </a>  
+    <div class="row photos">
+      <div class="col-sm-6 col-md-4 col-lg-3 item">
+        <ng-lottie
+        [options]="options"
+        (animationCreated)="onAnimate($event)"
+        (mouseover)="onMouseOver()"
+        (mouseleave)="onMouseLeave()"
+      ></ng-lottie>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 item">
+        <a href="https://i.imgur.com/gX11Vt5.jpg" data-lightbox="photos"
+          ><img class="img-fluid" src="https://i.imgur.com/gX11Vt5.jpg"
+        /></a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 item">
+        <a href="https://i.imgur.com/pZcUS2Y.jpg" data-lightbox="photos"
+          ><img class="img-fluid" src="https://i.imgur.com/pZcUS2Y.jpg"
+        /></a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 item">
+        <a href="https://i.imgur.com/06Ajq7f.jpg" data-lightbox="photos"
+          ><img class="img-fluid" src="https://i.imgur.com/06Ajq7f.jpg"
+        /></a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 item">
+        <a href="https://i.imgur.com/zmzERpe.jpg" data-lightbox="photos"
+          ><img class="img-fluid" src="https://i.imgur.com/zmzERpe.jpg"
+        /></a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 item">
+        <a href="https://i.imgur.com/gX11Vt5.jpg" data-lightbox="photos"
+          ><img class="img-fluid" src="https://i.imgur.com/gX11Vt5.jpg"
+        /></a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 item">
+        <a href="https://i.imgur.com/pZcUS2Y.jpg" data-lightbox="photos"
+          ><img class="img-fluid" src="https://i.imgur.com/pZcUS2Y.jpg"
+        /></a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 item">
+        <a href="https://i.imgur.com/06Ajq7f.jpg" data-lightbox="photos"
+          ><img class="img-fluid" src="https://i.imgur.com/06Ajq7f.jpg"
+        /></a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 item">
+        <a href="https://i.imgur.com/zmzERpe.jpg" data-lightbox="photos"
+          ><img class="img-fluid" src="https://i.imgur.com/zmzERpe.jpg"
+        /></a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 item">
+        <a href="https://i.imgur.com/gX11Vt5.jpg" data-lightbox="photos"
+          ><img class="img-fluid" src="https://i.imgur.com/gX11Vt5.jpg"
+        /></a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 item">
+        <a href="https://i.imgur.com/pZcUS2Y.jpg" data-lightbox="photos"
+          ><img class="img-fluid" src="https://i.imgur.com/pZcUS2Y.jpg"
+        /></a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 item">
+        <a href="https://i.imgur.com/06Ajq7f.jpg" data-lightbox="photos"
+          ><img class="img-fluid" src="https://i.imgur.com/06Ajq7f.jpg"
+        /></a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 item">
+        <a href="https://i.imgur.com/zmzERpe.jpg" data-lightbox="photos"
+          ><img class="img-fluid" src="https://i.imgur.com/zmzERpe.jpg"
+        /></a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 item">
+        <a href="https://i.imgur.com/gX11Vt5.jpg" data-lightbox="photos"
+          ><img class="img-fluid" src="https://i.imgur.com/gX11Vt5.jpg"
+        /></a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 item">
+        <a href="https://i.imgur.com/pZcUS2Y.jpg" data-lightbox="photos"
+          ><img class="img-fluid" src="https://i.imgur.com/pZcUS2Y.jpg"
+        /></a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 item">
+        <a href="https://i.imgur.com/06Ajq7f.jpg" data-lightbox="photos"
+          ><img class="img-fluid" src="https://i.imgur.com/06Ajq7f.jpg"
+        /></a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 item">
+        <a href="https://i.imgur.com/zmzERpe.jpg" data-lightbox="photos"
+          ><img class="img-fluid" src="https://i.imgur.com/zmzERpe.jpg"
+        /></a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 item">
+        <a href="https://i.imgur.com/gX11Vt5.jpg" data-lightbox="photos"
+          ><img class="img-fluid" src="https://i.imgur.com/gX11Vt5.jpg"
+        /></a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 item">
+        <a href="https://i.imgur.com/pZcUS2Y.jpg" data-lightbox="photos"
+          ><img class="img-fluid" src="https://i.imgur.com/pZcUS2Y.jpg"
+        /></a>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 item">
+        <a href="https://i.imgur.com/06Ajq7f.jpg" data-lightbox="photos"
+          ><img class="img-fluid" src="https://i.imgur.com/06Ajq7f.jpg"
+        /></a>
+      </div>
     </div>
   </div>
-  
+</div>

@@ -5,20 +5,37 @@ import { AnimationOptions } from 'ngx-lottie';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
-  // This is the option that uses the package's AnimationOption interface  
-  options: AnimationOptions = {    
-    path: '../../../assets/Lottie\ Lego.json'  
-  };  
+  animationItem: AnimationItem = {} as AnimationItem; // Initialize with an empty object
 
-  constructor() { }  
+  options: AnimationOptions = {
+    path: '../../../assets/Lottie Lego.json',
+    autoplay: false,
+  };
 
-  ngOnInit(): void {  }
+  constructor() {}
 
-  // This is the component function that binds to the animationCreated event from the package  
-  onAnimate(animationItem: AnimationItem): void {    
-    console.log(animationItem);  
+  ngOnInit(): void {}
+
+  // This is the component function that binds to the animationCreated event from the package
+  onAnimate(animationItem: AnimationItem): void {
+    this.animationItem = animationItem;
+    console.log(animationItem);
+  }
+
+  // Function to play the animation when the mouse is over
+  onMouseOver(): void {
+    if (this.animationItem) {
+      this.animationItem.play();
+    }
+  }
+
+  // Function to pause the animation when the mouse leaves
+  onMouseLeave(): void {
+    if (this.animationItem) {
+      this.animationItem.stop();
+    }
   }
 }
