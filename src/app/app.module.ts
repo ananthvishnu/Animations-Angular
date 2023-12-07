@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 // Add these two
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
+import { GSAPComponent } from './components/gsap/gsap.component';
 
 // Export this function
 export function playerFactory(): any {  
@@ -20,7 +21,8 @@ export function playerFactory(): any {
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    GSAPComponent
   ],
   imports: [
     BrowserModule,
