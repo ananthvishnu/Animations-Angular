@@ -6,7 +6,7 @@ import {
   Inject,
 } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-import { gsap } from 'gsap';
+import { gsap,TimelineMax } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
@@ -39,6 +39,8 @@ export class GSAPComponent implements OnInit {
   ngOnInit() {
     this.initialAnimations();
     this.initScrollAnimations();
+    // this.createMenuAnim()
+
   }
 
   initScrollAnimations(): void {
@@ -229,4 +231,23 @@ export class GSAPComponent implements OnInit {
       delay: 0.8,
     });
   }
+
+
+  // menus = new TimelineMax({paused:true, reversed:true});
+
+  // createMenuAnim(){
+  //   this.menus.to("#topLine", .5, {rotation:'30', ease:"Expo.easeInOut"},0)
+  //   this.menus.to("#midLine", .5, {opacity:'0', ease:"Expo.easeInOut"},0)
+  //   this.menus.to("#botLine", .5, {rotation:'-30', ease:"Expo.easeInOut"},0)
+  // }
+  
+  // menuClick() {
+  //   this.menus.reversed() ? this.menus.play() : this.menus.reverse();	
+  //   return console.log('clicked');
+  //  }
+
+
+
+
+
 }
